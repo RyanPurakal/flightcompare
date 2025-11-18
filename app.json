@@ -13,7 +13,7 @@
       "backgroundColor": "#ffffff"
     },
     "extra": {
-      "EXPO_PUBLIC_GEMINI_API_KEY": "YOUR_GEMINI_API_KEY_HERE",
+      "EXPO_PUBLIC_GEMINI_API_KEY": "AIzaSyDKF3WQDKSBCWJghl2jFYK4Mvd_uvFwLZA",
       "RAPIDAPIKEY": "YOUR_RAPIDAPI_KEY_HERE",
       "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY_HERE"
     },

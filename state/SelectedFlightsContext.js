@@ -7,7 +7,7 @@ const SELECTED_KEY = '@selectedFlights';
 const SAVED_KEY = '@saved_flights';
 
 export const SelectedFlightsProvider = ({ children }) => {
-  const [selectedFlights, setSelectedFlights] = useState([]); // up to 2 items
+  const [selectedFlights, setSelectedFlights] = useState([]); 
   const [savedFlights, setSavedFlights] = useState([]);
 
   useEffect(() => {

@@ -1,1 +1,25 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'; import FlightStack from './FlightStack'; import Compare from '../screens/Compare'; import { SelectedFlightsProvider } from '../state/SelectedFlightsContext'; const Tab = createBottomTabNavigator(); export default function TabNavigator() { return ( <SelectedFlightsProvider> <Tab.Navigator screenOptions={{ headerStyle: { backgroundColor: '#1E1E1E' }, headerTintColor: '#fff', tabBarStyle: { backgroundColor: '#1E1E1E' }, tabBarActiveTintColor: '#4CAF50', tabBarInactiveTintColor: '#aaa', }} > <Tab.Screen name="Flights" component={FlightStack} /> <Tab.Screen name="Compare" component={Compare} /> </Tab.Navigator> </SelectedFlightsProvider> ); }
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import FlightStack from './FlightStack';
+import Compare from '../screens/Compare';
+import { SelectedFlightsProvider } from '../state/SelectedFlightsContext';
+
+const Tab = createBottomTabNavigator();
+
+export default function TabNavigator() {
+  return (
+    <SelectedFlightsProvider>
+      <Tab.Navigator
+        screenOptions={{
+          headerStyle: { backgroundColor: '#1E1E1E' },
+          headerTintColor: '#fff',
+          tabBarStyle: { backgroundColor: '#1E1E1E' },
+          tabBarActiveTintColor: '#4CAF50',
+          tabBarInactiveTintColor: '#aaa',
+        }}
+      >
+        <Tab.Screen name="Flights" component={FlightStack} />
+        <Tab.Screen name="Compare" component={Compare} />
+      </Tab.Navigator>
+    </SelectedFlightsProvider>
+  );
+}
