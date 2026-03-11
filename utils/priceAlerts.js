@@ -61,3 +61,4 @@ export const checkPriceAlerts = async (flightId, currentPrice) => {
 };
 
 
+

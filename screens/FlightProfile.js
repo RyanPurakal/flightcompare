@@ -167,7 +167,7 @@ export default function FlightProfile({ route }) {
           style={[styles.actionButton, styles.actionButtonSecondary]}
           onPress={() => setShowPriceAlertInput(!showPriceAlertInput)}
         >
-          <Text style={styles.actionButtonText}>💰 Price Alert</Text>
+          <Text style={styles.actionButtonText}>Price Alert</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.actionButton, styles.actionButtonSecondary]}
